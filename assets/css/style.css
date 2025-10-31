@@ -88,7 +88,20 @@
     font-size: 1.25rem;
     letter-spacing: 0.3px;
     }
-
+/* google map styling */
+    .osaka-gmap {
+        position: relative;
+        text-align: center;
+        height: 100%;
+        width: 100%;
+    }
+    .osaka-gmap-iframe {
+        overflow: hidden;
+        background: none !important;
+        height: 100%;
+        width: 100%;
+        
+    }
 /* fade-in animation */
     .fade-in {
     opacity: 0;
