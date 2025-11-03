@@ -1,3 +1,9 @@
+/* logo styling */
+.logo {
+    width: 95px; 
+    height: auto;
+}
+
 /* navbar styling */
     .nav-menu .nav-link {
     font-size: 1.1rem;
@@ -88,6 +94,14 @@
     font-size: 1.25rem;
     letter-spacing: 0.3px;
     }
+/* style of justifyibg content */
+    .text-justify-custom {
+        text-align: justify;
+    }
+/* text sizing */
+    .text-size {
+        font-size: 3.5rem;
+}
 /* bootstrap button black */
     .btn-primary {
         background-color: #000 !important;

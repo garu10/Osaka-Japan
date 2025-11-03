@@ -5,12 +5,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <title>Osaka (大阪, Ōsaka), Japan</title>
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
 
+  <!-- External CSS -->
   <link href="assets/css/style.css" rel="stylesheet" />
-
+  <!-- Bootstrap CSS v5.3.2 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- font-awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -23,7 +29,7 @@
                         <div class="container flex-lg-column align-items-lg-center">
                             
                             <!-- Logo -->
-                            <a class="navbar-brand d-flex align-items-center justify-content-start justify-content-lg-center mb-lg-3" href="#">
+                            <a class="navbar-brand d-flex align-items-center justify-content-start justify-content-lg-center mb-lg-3" href="index.html">
                                 <span class="fw-bold">OSAKA</span>
                             </a>
                             <!-- Toggle Button -->
@@ -33,18 +39,18 @@
                             </button>
                             <!-- Nav Links -->
                             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                                <ul class="navbar-nav gap-4 text-uppercase nav-menu">
+                                <ul class="navbar-nav nav-underline gap-4 text-uppercase nav-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="index.html">Home</a>
+                                        <a class="nav-link" href="index.html">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="about.html">About</a>
+                                        <a class="nav-link" href="about.html">About</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="culture.html">Cultures</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="hotels.html">Hotels</a>
+                                        <a class="nav-link active" aria-current="page" href="hotels.html">Hotels</a>
                                     </li>
                                 </ul>
                             </div>
@@ -54,17 +60,19 @@
             </div>
         </div>
     </header>
-
+    <!-- hotel intro text -->
     <div class="container-fluid text-center p-5 mb-5 bg-light">
-        <h1 class="display-4 fw-bold">🏨 Suggested Stays in Osaka</h1>
+        <h1 class="display-4 fw-bold">Suggested Hotels</h1>
         <p class="lead text-muted">Find the perfect blend of location, comfort, and culture for your trip.</p>
     </div>
 
     <div class="container my-5">
         <div class="row g-4 justify-content-center">
-            
+            <!-- hotel suggestions -- cards - carousel - accordion bootstrap -->
             <div class="col-lg-4 col-md-6">
+                <!-- hotel card -->
                 <div class="card h-100 shadow-lg border-0">
+                    <!-- hotel carousel for showing both building & example rooms -->
                     <div id="hotelCarousel1" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -83,31 +91,31 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-
+                    <!-- card texts for subtitle and rate -->
                     <div class="card-body">
                         <h5 class="card-title fw-bold">The Ritz-Carlton, Osaka</h5>
-                        <p class="text-muted small mb-2"><i class="bi bi-geo-alt-fill me-1 text-danger"></i> Umeda District - Luxury, English-Speaking Staff</p>
+                        <p class="text-muted small mb-2"><i class="fa fa-map-marker me-1 text-danger"></i> Umeda District - Luxury, English-Speaking Staff</p>
                         <div class="text-warning mb-3">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i> (4.8 / 5)
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i> (4.8 / 5)
                         </div>
-                        
+                        <!-- accordion for viewing benefits -->
                         <div class="accordion accordion-flush mb-3" id="accordionAmenities1">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        View Amenities
+                                        Benefits
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionAmenities1">
                                     <div class="accordion-body small">
-                                        <span class="badge bg-success-subtle text-success me-2"><i class="bi bi-wifi"></i> Free WiFi</span>
-                                        <span class="badge bg-info-subtle text-info me-2"><i class="bi bi-pool-fill"></i> Indoor Pool</span>
-                                        <span class="badge bg-warning-subtle text-warning"><i class="bi bi-cup-hot-fill"></i> Fine Dining</span>
+                                        <span class="badge bg-success-subtle text-success me-2"><i class="fa fa-wifi"></i> Free WiFi</span>
+                                        <span class="badge bg-info-subtle text-info me-2"><i class="fa fa-swimming-pool"></i> Indoor Pool</span>
+                                        <span class="badge bg-warning-subtle text-warning"><i class="fa fa-coffee"></i> Fine Dining</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+                        <!-- button for triggering modal -->
                         <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal1">
                             Check Price 
                         </button>
@@ -116,7 +124,9 @@
             </div>
 
             <div class="col-lg-4 col-md-6">
+                <!-- hotel card -->
                 <div class="card h-100 shadow-lg border-0">
+                    <!-- hotel carousel for showing both building & example rooms -->
                     <div id="hotelCarousel2" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -135,31 +145,31 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-
+                    <!-- card texts for subtitle and rate -->
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Cross Hotel Osaka</h5>
-                        <p class="text-muted small mb-2"><i class="bi bi-geo-alt-fill me-1 text-danger"></i> Namba/Dotonbori - Ideal for Foodies & Nightlife</p>
+                        <p class="text-muted small mb-2"><i class="fa fa-map-marker me-1 text-danger"></i> Namba/Dotonbori - Ideal for Foodies & Nightlife</p>
                         <div class="text-warning mb-3">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i> (4.0 / 5)
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="far fa-star"></i> (4.0 / 5)
                         </div>
-                        
+                        <!-- accordion for viewing benefits -->
                         <div class="accordion accordion-flush mb-3" id="accordionAmenities2">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        View Amenities
+                                        Benefits
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionAmenities2">
                                     <div class="accordion-body small">
-                                        <span class="badge bg-success-subtle text-success me-2"><i class="bi bi-wifi"></i> Free WiFi</span>
-                                        <span class="badge bg-secondary-subtle text-secondary me-2"><i class="bi bi-cup-straw"></i> On-site Cafe</span>
-                                        <span class="badge bg-primary-subtle text-primary"><i class="bi bi-train-front-fill"></i> Metro Access</span>
+                                        <span class="badge bg-success-subtle text-success me-2"><i class="fa fa-wifi"></i> Free WiFi</span>
+                                        <span class="badge bg-secondary-subtle text-secondary me-2"><i class="fa fa-coffee"></i> On-site Cafe</span>
+                                        <span class="badge bg-primary-subtle text-primary"><i class="fa fa-train"></i> Metro Access</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+                        <!-- button for triggering modal -->
                         <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal2">
                             Check Price 
                         </button>
@@ -168,7 +178,9 @@
             </div>
 
             <div class="col-lg-4 col-md-6">
+                <!-- hotel card -->
                 <div class="card h-100 shadow-lg border-0">
+                    <!-- hotel carousel for showing both building & example rooms -->
                     <div id="hotelCarousel3" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -187,31 +199,31 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-
+                    <!-- card text for subtitle and rate -->
                     <div class="card-body">
                         <h5 class="card-title fw-bold">APA Hotel Namba-Shinsaibashi</h5>
-                        <p class="text-muted small mb-2"><i class="bi bi-geo-alt-fill me-1 text-danger"></i> Shinsaibashi - Clean, Efficient, Great Value</p>
+                        <p class="text-muted small mb-2"><i class="fa fa-map-marker me-1 text-danger"></i> Shinsaibashi - Clean, Efficient, Great Value</p>
                         <div class="text-warning mb-3">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> (3.5 / 5)
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-alt"></i><i class="far fa-star"></i> (3.5 / 5)
                         </div>
-                        
+                        <!-- accordion for viewing benefits -->
                         <div class="accordion accordion-flush mb-3" id="accordionAmenities3">
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed py-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        View Amenities
+                                        Benefits
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionAmenities3">
                                     <div class="accordion-body small">
-                                        <span class="badge bg-success-subtle text-success me-2"><i class="bi bi-wifi"></i> Free WiFi</span>
-                                        <span class="badge bg-danger-subtle text-danger me-2"><i class="bi bi-currency-dollar"></i> Best Price</span>
-                                        <span class="badge bg-secondary-subtle text-secondary"><i class="bi bi-cup-hot-fill"></i> Vending Machine</span>
+                                        <span class="badge bg-success-subtle text-success me-2"><i class="fa fa-wifi"></i> Free WiFi</span>
+                                        <span class="badge bg-danger-subtle text-danger me-2"><i class="fa fa-dollar-sign"></i> Best Price</span>
+                                        <span class="badge bg-secondary-subtle text-secondary"><i class="fa fa-coffee"></i> Vending Machine</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        
+                        <!-- button for triggering modal -->
                         <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#bookingModal3">
                             Check Price 
                         </button>
@@ -221,7 +233,7 @@
 
         </div>
     </div>
-
+    <!-- modal contents for each hotel -->
     <div class="modal fade" id="bookingModal1" tabindex="-1" aria-labelledby="bookingModalLabel1" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
